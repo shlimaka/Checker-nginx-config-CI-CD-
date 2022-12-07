@@ -16,7 +16,7 @@ jobs:
         run: sudo apt install nginx -y
       -
         name: Check nginx config
-        run: nginx -t -c $PWD/nginx.conf
+        run: sudo nginx -t -c $PWD/nginx.conf
       -
         name: Checkout
         uses: actions/checkout@v3
