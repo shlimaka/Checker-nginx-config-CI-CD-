@@ -13,7 +13,7 @@ jobs:
     steps:
       -
         name: install nginx
-        run: apt install nginx -y
+        run: sudo apt install nginx -y
       -
         name: Check nginx config
         run: nginx -t -c $PWD/nginx.conf
