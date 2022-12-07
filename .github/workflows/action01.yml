@@ -1,4 +1,4 @@
-name: ci
+name: ciiiiiii
 on:
   push:
     branches:    
@@ -30,4 +30,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/pop:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/clockbox:latest
