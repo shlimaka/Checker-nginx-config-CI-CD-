@@ -9,8 +9,10 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu/nginx
+    runs-on: ubuntu-latest
     steps:
+      - name: install nginx
+        run: apt install nginx -y
       -
         name: Check nginx config
         run: nginx -t -c $PWD/nginx.conf
