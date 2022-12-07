@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - run: sudo apt install nginx -y
-       - run: echo $PWD
+       - run: ls /home/runner/work/Checker-nginx-config-CI-CD-/Checker-nginx-config-CI-CD-
 #       - run: sudo nginx -t -c home/runner/work/Checker-nginx-config-CI-CD-/Checker-nginx-config-CI-CD-/.github/workflows/nginx.conf
