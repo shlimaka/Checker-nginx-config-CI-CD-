@@ -11,12 +11,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: install nginx
-        run: sudo apt install nginx -y
-      -
-        name: Check nginx config
-        run: tree ../../
+#      -
+#        name: install nginx
+#        run: sudo apt install nginx -y
+#      -
+#        name: Check nginx config
 #        run: sudo nginx -t -c $PWD/nginx.conf
       -
         name: Checkout
