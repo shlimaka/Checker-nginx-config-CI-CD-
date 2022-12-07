@@ -8,16 +8,15 @@ on:
       - v1.*
 
 jobs:
-    runs-on: ubuntu/nginx
-    steps:
-      -
-        name: Check nginx config
-        run: nginx -t
-
-jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      -
+        name: Check nginx config
+        run: nginx -t -c $PWD/nginx.conf
+      -
+        name: Check nginx config
+        run: 
       -
         name: Checkout
         uses: actions/checkout@v3
