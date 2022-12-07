@@ -2,7 +2,7 @@ name: ci
 on:
   push:
     branches:    
-      - master
+      - old-one
     tags:        
       - v2
       - v1.*
