@@ -13,7 +13,9 @@ jobs:
     steps:
       -
         name: install nginx
-        run: sudo apt install nginx -y
+        run: |
+          ls ${{ github.workspace }}
+#        run: sudo apt install nginx -y
       -
         name: Check nginx config
         run: nginx -t -c $PWD/nginx.conf
