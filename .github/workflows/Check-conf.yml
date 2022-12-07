@@ -2,7 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - master
+      - old-one
     tags:
       - v2
       - v1.*
@@ -11,10 +11,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
-      - 
-        name: Install Nginx
-        run: sudo apt install nginx -y
-      -
-	name: Test conf
-	run: sudo nginx -t -c ./nginx.conf
+       - run: sudo apt install nginx -y
+       - run: sudo nginx -t -c home/runner/work/Checker-nginx-config-CI-CD-/Checker-nginx-config-CI-CD-/.github/workflows/nginx.conf
