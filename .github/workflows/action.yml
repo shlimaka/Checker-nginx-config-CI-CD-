@@ -9,6 +9,13 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu/nginx
+    steps:
+      -
+        name: Check nginx config
+        run: nginx -t
+
+  build:
     runs-on: ubuntu-latest
     steps:
       -
